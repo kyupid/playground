@@ -1,7 +1,14 @@
 public class RandomNum {
+
+    private String a;
+    private int b;
+
     public static void main(String[] args) {
         String test = randomNickName();
         System.out.println(test);
+        String c;
+        int d;
+
     }
 
     static String randomNickName() {
