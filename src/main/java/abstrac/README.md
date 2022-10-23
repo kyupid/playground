@@ -23,8 +23,9 @@ public abstract class AbstractRememberMeServices implements FunctionOne, Functio
 ```
 
 - `AbstractRememberMeSerices`는 RememberMe 로직을 실행시키기 위한 뼈대 서비스이다.
-- let's say you are using `PersistentTokenBasedRememberMeServices` for AutoLogin because It  was already made by Spring Security.
-- and you want to customize some logic of `processAutoLogin()` for using Session instead of Cookie. 
+- let's say you are using `PersistentTokenBasedRememberMeServices` for AutoLogin because It was already made by Spring
+  Security.
+- and you want to customize some logic of `processAutoLogin()` for using Session instead of Cookie.
 - so you create `CustomAutoLoginServices` and override the method like below.
 
 ```java
@@ -37,7 +38,9 @@ public class CustomAutoLoginServices extends AbstractRememberMeServices {
     }
 }
 ```
-- at this point, interfaces were not really useful here, but the thing is that they offer common functions for example auto login, logout or something. If you take a look Spring Security you will be more clear about that.
+
+- at this point, interfaces were not really useful here, but the thing is that they offer common functions for example
+  auto login, logout or something. If you take a look Spring Security you will be more clear about that.
 - this is how abstract and interface work!
 
 ## Conclusion
