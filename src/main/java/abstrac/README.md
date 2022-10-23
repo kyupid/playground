@@ -1,3 +1,5 @@
+__Note__: 이 문서는 스프링 시큐리티의 RememberMeService 를 통해 abstract class와 interface의 문법적인 구현 방식의 차이 외에 사용 용도를 나름대로 깨달은 것을 정리한 글 입니다
+
 ![image](https://user-images.githubusercontent.com/59721293/162165110-f93acd90-b192-4dc5-8c79-8e9d2c757c7f.png)
 
 ```java
