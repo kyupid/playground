@@ -4,8 +4,12 @@ import java.util.Collection;
 
 class Main {
     public static void main(String[] args) {
-        Envelope envelope = new Envelope();
-        envelope.x();
+        Object[] obj = {"hello", "world"};
+
+        String[] attributes = (String[]) obj;
+
+        Object hello = "hello";
+        String attribute = (String) hello;
     }
 }
 
