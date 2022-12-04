@@ -10,12 +10,12 @@ public class MyThread extends Thread{
         this.status = status;
     }
 
-    @Override
-    public void run() {
-        if (status == 0) {
-            person.printPersonInfo(this);
-        } else if (status == 1) {
-            person.printMyThread(this);
-        }
-    }
+//    @Override
+//    public void run() {
+//        if (status == 0) {
+//            person.printPersonInfo(this);
+//        } else if (status == 1) {
+//            person.printMyThread(this);
+//        }
+//    }
 }

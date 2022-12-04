@@ -1,31 +1,39 @@
 package mythread;
 
-public class Person {
+class Person {
     private String name;
     private int age;
+    private String phoneNumber;
 
-    public Person(String name, int age) {
+    public Person(String name, int age, String phoneNumber) {
         this.name = name;
         this.age = age;
+        this.phoneNumber = phoneNumber;
     }
 
     public String getName() {
         return name;
     }
 
+    public void setName(String name) {
+        this.name = name;
+    }
+
     public int getAge() {
         return age;
     }
 
-    public synchronized void printPersonInfo(MyThread myThread) {
-        try {
-            wait(3000);
-        } catch (Exception e) {
-        }
-        System.out.println(String.format("Thread = %s, Person name = %s, age = %d", myThread.getName(), getName(), getAge()));
+    public void setAge(int age) {
+        this.age = age;
     }
 
-    public synchronized void printMyThread(MyThread myThread) {
-        System.out.println("MyThreadName = " + myThread);
+    public String getPhoneNumber() {
+        return phoneNumber;
     }
+
+    public void setPhoneNumber(String phoneNumber) {
+        this.phoneNumber = phoneNumber;
+    }
+
+    // getter, setter 생략
 }
